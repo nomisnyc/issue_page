@@ -1,0 +1,282 @@
+/*
+Project Name: mdrc issues page
+Client: Digital Pulp
+Author: Simon Wong
+*/
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5; 
+}
+
+/* Center the container */
+#container {
+  width: 940px;
+  margin: auto;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 14px;
+  color: #cccccc;
+}
+
+#header {
+  width: 940px;
+  margin: auto;
+  padding-top: 10px 0 0 20px;
+}
+
+#header img {
+  float:left;
+  padding-top: 20px
+}
+
+#header h3 {
+  font-size: 12px;
+  color: #cccccc;
+  width: 140px;
+  float: left;
+  padding-top: 35px;
+  padding-left: 15px;
+}
+
+#top_nav ul {
+  list-style: none;
+  font-size: 10px;
+  float:right;
+  width: 500px;
+  line-height: 5px;
+}
+
+#top_nav ul a {
+  float: left;
+  margin-left: 15px;
+  color: #cccccc;
+}
+
+/* seach bar */
+.search { 
+  padding:6px 5px 6px 10px;
+  margin:25px 24px 0 0; 
+  width: 160px;
+  background: url('../images/search.png') no-repeat .05px;
+  background-position: right center;
+  float:right;
+  height: 10px;
+}
+
+#health {
+  width: 540px;
+  float: left;
+  padding-left: 10px;
+}
+
+#health h1 {
+  color: #ff9900;
+  line-height: 10px;
+}
+
+#issue_sidebar {
+  width: 260px;
+  float: right;
+  margin-right: 60px;
+}
+
+#issue_sidebar h4 {
+  color:#006699;
+  margin-left: 22px;
+  line-height: 5px;
+  font-size: 14px;
+}
+
+#issue_sidebar ul{
+  color: #00ccff;
+  font-size: 12px;
+}
+
+#issue_sidebar ul a {
+  text-decoration: none;
+  color: #00ccff;
+}
+
+#highlight {
+  margin: 80px 0px 40px 0px;
+}
+
+#highlight table {
+  background-color: #333333;
+  width: 940px;
+  padding: 40px 0px 40px 0px;
+}
+
+#highlight td {
+  width: 290px;
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+  padding: 10px 10px 0px 10px;
+  max-height: 100px;
+}
+
+#highlight td img{
+  padding:0px 15px 0px 15px;
+}
+
+#highlight td p {
+  padding: 0px;
+}
+
+#highlight tr {
+  text-align: left; 
+}
+
+.yellow_font {
+  font-size: 14px;
+  color: #ffff00;
+}
+
+.headline_serif {
+  font-family: Georgia, sans-serif;
+  color: #ffffff;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.highlight_links a {
+  color: #00ccff;
+  width: 5px;
+}
+
+.hide {
+  display: none;
+}
+
+footer {
+  background-color: #cccccc;
+  color: #333333;
+  margin: auto;
+  font-size: 8px;
+  height: 120px;
+  }
+
+footer p {
+  color: #333333;
+  font-size: 8px;
+}
+
+footer ul a{
+  color: #333333;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer td {
+  text-align: left;
+  margin: auto;
+  width: 940px;
+  max-height: 100px;
+  padding: 10px;
+  vertical-align: middle;
+}
+/* starting css for the pagination pluggin */
+.holder {
+    margin:15px 10px;
+    float: right;
+}
+.holder a {
+    font-size:12px;
+    cursor:pointer;
+    margin:0 5px;
+    color:#333;
+}
+.holder a:hover {
+    background-color:#222;
+    color:#fff;
+}
+.holder a.jp-previous {
+    margin-right:15px;
+}
+.holder a.jp-next {
+    margin-left:15px;
+}
+.holder a.jp-current,a.jp-current:hover {
+    color:#FF4242;
+    font-weight:bold;
+}
+.holder a.jp-disabled,a.jp-disabled:hover {
+    color:#bbb;
+}
+.holder a.jp-current,a.jp-current:hover,.holder a.jp-disabled,a.jp-disabled:hover {
+    cursor:default;
+    background:none;
+}
+.holder span {
+    margin: 0 5px;
+}
+
+#itemContainer {
+  list-style: none;
+}
+
+#itemContainer a {
+  color: #00ccff;
+}
+
+#itemContainer li {
+  border-bottom: 1px solid #333333;
+}
+
+#itemContainer h3 {
+  line-height: 5px;
+}
+/* ending css for pagination */
+
+/*toggle button for projects*/
+#project_buttons {
+  width: 400px;
+  text-align: center;
+  float: left;
+}
+
+#project_buttons a {
+  text-decoration: none;
+  width: 180px;
+  padding: 5px 10px;
+  margin: 5px 10px;
+}
+
+.current_projects {
+  background-color: #ff9900;
+  color: white;
+  border-radius: 10px;
+}
+
+.completed_projects {
+  background-color: #cccccc;
+  color: black;
+  border-radius: 10px;
+}
